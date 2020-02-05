@@ -2,3 +2,25 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+/* STYLING FOOTER */
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: #ccc;
+  font-size: 14px;
+  color: #333;
+}
+
+footer a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer a:hover {
+  color: #fff;
+}

@@ -28,7 +28,7 @@ $("#ytBtn").on("click", (event) => {
         for (let i = 0; i < response.items.length; i++) {
             const videos = response.items[i];
 
-            let videoTN = videos
+            let videoTN = videos;
             console.log(videoTN);
             $("#ytResults").append($(`
                 

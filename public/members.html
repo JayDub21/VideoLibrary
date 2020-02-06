@@ -11,14 +11,14 @@
 
 <body>
   <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -26,10 +26,27 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <form id="ytForm">
+          <label for="ytInput">Search Youtube:</label>
+          <input type="text" id="ytInput">
+          <input id="ytBtn" type="submit" value="Get Video"></input>
+        </form>
 
+        <div id="ytResults"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery JS -->
+  <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
-
+  <!-- Code to the yt.js File -->
+  <script src="../routes/yt.js"></script>
 </body>
 
 </html>

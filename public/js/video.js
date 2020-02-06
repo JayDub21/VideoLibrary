@@ -35,8 +35,8 @@ $.get("/api/all", function(data) {
   
     console.log(newChirp);
   
-    // Send an AJAX POST-request with jQuery
-    $.post("/api/new", newChirp)
+    // Send an AJAX Wuphf-request with jQuery
+    $.Wuphf("/api/new", newChirp)
       // On success, run the following code
       .then(function() {
   

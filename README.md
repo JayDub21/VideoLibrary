@@ -1,5 +1,4 @@
-
-# [PROPOSAL -- "WUPHF" Project 2 - Group 6](https://placehold.it/15/1589F0/000000?text=+)
+# ["WUPHF" Project 2 - Group 6](https://placehold.it/15/1589F0/000000?text=+)
 
 Team WUPHF: Justin W, Luke D, Chris G, Henry H
 - Watching

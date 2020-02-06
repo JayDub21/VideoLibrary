@@ -1,4 +1,113 @@
-form.signup,
-form.login {
-  margin-top: 50px;
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  background-color: #d6dde8;
+}
+
+.navbar {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+}
+
+.welcome {
+  font-size: 36px;
+  line-height: 52px;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.hero-h1 {
+  font-size: 42px;
+  margin-top: -50px;
+  padding-bottom: 10px;
+}
+
+.heroImg {
+  border-radius: 5px;
+}
+
+.small-gap {
+  height: 25px;
+}
+
+.big-gap {
+  height: 100px;
+}
+
+.home-section {
+  text-align: center;
+  border-radius: 5px;
+}
+
+.faIcon {
+  font-size: 46px;
+  text-align: center;
+  color: #cc5000;
+  margin-bottom: 30px;
+}
+
+.video-button {
+  text-align: center;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+
+}
+
+.video-iframe {
+  width: 100%;
+  height: 540px;
+}
+
+.wuphf {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+.wuphf-user {
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+  color: dodgerblue;
+}
+
+.youtube-links {
+  background-color: #fafafa;
+  border-radius: 15x;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0px 20px 0px;
+}
+
+.youtube-links:hover {
+  border: 1px solid dodgerblue;
+  background-color: #efefef;
+}
+
+/* STYLING FOOTER */
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  background-color: #ccc;
+  font-size: 14px;
+  color: #333;
+  border-top: 1px solid #999;
+}
+
+footer a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer a:hover {
+  color: #fff;
 }

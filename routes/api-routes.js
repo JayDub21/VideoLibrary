@@ -17,9 +17,9 @@ module.exports = function (app) {
     // otherwise send back an error
     app.post("/api/signup", function (req, res) {
         db.User.create({
-                email: req.body.email,
-                password: req.body.password
-            })
+            email: req.body.email,
+            password: req.body.password
+        })
             .then(function () {
                 res.redirect(307, "/api/login");
             })
@@ -63,11 +63,9 @@ module.exports = function (app) {
         console.log("Wuphf Data:");
         console.log(req.body);
         Wuphf.create({
-            author: req.body.author,
             body: req.body.body,
             created_at: req.body.created_at
-        }).then(function (results) {
-            // `results` here would be the newly created wuphf
+        }).then(function () {
             res.end();
         });
     });

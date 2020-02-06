@@ -9,7 +9,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.DATE,
             allowNull: false
         },
-        comment: {
+        body: {
             type: DataTypes.STRING,
             allowNull: false
         }

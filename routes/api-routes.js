@@ -2,6 +2,8 @@
 var db = require("../models");
 var passport = require("../config/passport");
 
+var Wuphf = require("../models/wuphf.js");
+
 module.exports = function (app) {
     // Using the passport.authenticate middleware with our local strategy.
     // If the user has valid login credentials, send them to the members page.
@@ -45,5 +47,26 @@ module.exports = function (app) {
                 id: req.user.id
             });
         }
+    });
+    app.get("/api/all", function (req, res) {
+        // Finding all Wuphfs, and then returning them to the user as JSON.
+        // Sequelize queries are asynchronous, which helps with perceived speed.
+        // If we want something to be guaranteed to happen after the query, we'll use
+        // the .then function
+        Wuphf.findAll({}).then(function (results) {
+            // results are available to us inside the .then
+            res.json(results);
+        });
+    });
+    // Add a wuphf
+    app.post("/api/new", function (req, res) {
+        console.log("Wuphf Data:");
+        console.log(req.body);
+        Wuphf.create({
+            body: req.body.body,
+            created_at: req.body.created_at
+        }).then(function () {
+            res.end();
+        });
     });
 };

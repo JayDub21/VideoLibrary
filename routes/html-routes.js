@@ -30,17 +30,18 @@ module.exports = function (app) {
         res.sendFile(path.join(__dirname, "../public/login.html"));
     });
 
-    app.get("/video", function (req, res) {
+    app.get("/video/:id", function (req, res) {
         // If the user already has an account send them to the videos page
         if (req.user) {
-            res.redirect("/video.html");
+            // res.redirect("/video");
+            res.sendFile(path.join(__dirname, "../public/video.html"));
         }
-        res.sendFile(path.join(__dirname, "../public/login.html"));
+        // res.sendFile(path.join(__dirname, "../public/login.html"));
     });
 
     // Here we've add our isAuthenticated middleware to this route.
     // If a user who is not logged in tries to access this route they will be redirected to the signup page
-    app.get("/members", isAuthenticated, function (req, res) {
+    app.get("/members", isAuthenticated, function (_, res) {
         res.sendFile(path.join(__dirname, "../public/members.html"));
     });
 

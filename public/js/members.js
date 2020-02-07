@@ -32,42 +32,52 @@ $(document).ready(function () {
             videosToAdd.push(createNewRow(videos[i]));
         }
         blogContainer.prepend(videosToAdd);
+
+
     }
 
     // This function constructs a post's HTML
     function createNewRow(video) {
 
         var newPostCard = $("<div>");
-        newPostCard.addClass("cardvideo tile is-4 is-vertical");
-
-        var newPostCardBody = $("<div>");
-        // newPostCardBody.addClass("is-4");
-        // var newPostCardBody2 = $("<div>");
-        // newPostCardBody2.addClass("tile is-child");
+        newPostCard.addClass("cardvideo tile tile2 is-parent is-6 is-vertical has-text-centered");
+        var newPostCardBody = $("<article>");
+        newPostCardBody.addClass("tile is-child");
         var newPostCardHeading = $("<div>");
         // newPostCardHeading.addClass("card-header");
         var newPostTitle = $("<p>");
-        newPostTitle.addClass("title");
-        // newPostAuthor.css({
-        //     float: "right",
-        //     color: "blue",
-        //     "margin-top":
-        //         "10px"
-        // });
-
-
+        newPostTitle.addClass("is-size-4 has-text-weight-bold");
+        // var newPostTitle2 = $("<a>");
+        // newPostTitle2.attr("href", "/video");
+        // newPostTitle2.addClass("my-link");
+        newPostTitle.text(video.title);
 
         var newPostBody = $("<p>");
         var newPostBody2 = $("<p>");
-        newPostTitle.text(video.title);
+
         newPostBody.text("Recorded on: " + video.rec_date);
         newPostBody2.text("Keywords: " + video.keyword);
         newPostCardHeading.append(newPostTitle);
+        // newPostTitle.append(newPostTitle2);
         newPostCardBody.append(newPostBody);
         newPostCardBody.append(newPostBody2);
         newPostCard.append(newPostCardHeading);
         newPostCard.append(newPostCardBody);
-        newPostCard.data("video", video);
+        newPostCard.attr("id", video.id)
         return newPostCard;
     }
+    $(document).on("click", ".cardvideo", function (e) {
+        const id = $(this).attr("id");
+        console.log(id);
+        window.location.replace("/video/" + id);
+    })
 });
+
+
+ // $(".my-link").on("click", function (event) {
+        //     event.preventDefault();
+        //     var videoId = $(this).attr("data-video");
+        //     $.get(`/video/${videoId}`, function (response) {
+        //         console.log(response)
+        //     });
+        // });

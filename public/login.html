@@ -16,8 +16,8 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img src="../img/logo.png" alt="Bootcamp Video Library" width="248" height="28">
+        <a class="navbar-item" href="/">
+          <img src="/img/logo.png" alt="Bootcamp Video Library" width="248" height="28">
         </a>
       </div>
     </div>
@@ -35,35 +35,41 @@
                 University of Texas at Austin
               </h2>
               <p>Login to get started...</p>
-              <div class="field">
-                <p class="control has-icons-left has-icons-right">
-                  <input class="input" type="email" id="email-input" placeholder="Email">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="field">
-                <p class="control has-icons-left">
-                  <input class="input" type="password" id="password-input" placeholder="Password">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="field">
-                <p class="control">
-                  <button class="button is-warning is-medium" type="submit">
-                    Login
-                  </button> &nbsp;
-                  <a href="/signup"><button class="button is-success is-medium">
+              <br>
+              <form class="login">
+
+                <div class="field">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <p class="control has-icons-left has-icons-right">
+                    <input class="input" type="email" id="email-input" placeholder="Email">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <label for="exampleInputPassword1">Password</label>
+                  <p class="control has-icons-left">
+                    <input class="input" type="password" id="password-input" placeholder="Password">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-lock"></i>
+                    </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <p class="control">
+                    <button class="button is-warning is-medium" type="submit">
+                      Login
+                    </button>&nbsp;
+                    <a class="button is-success is-medium" href="/signup">
                       Sign Up
-                    </button></a>
-                </p>
-              </div>
+                    </a>
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
           <div class="tile is-child is-7 has-text-centered">

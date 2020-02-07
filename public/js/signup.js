@@ -21,21 +21,6 @@ $(document).ready(function () {
         passwordInput.val("");
     });
 
-<<<<<<< HEAD
-	// Does a Wuphf to the signup route. If successful, we are redirected to the members page
-	// Otherwise we log any errors
-	function signUpUser(email, password) {
-		$.Wuphf("/api/signup", {
-			email: email,
-			password: password
-		})
-			.then(function () {
-				window.location.replace("/members");
-				// If there's an error, handle it by throwing up a bootstrap alert
-			})
-			.catch(handleLoginErr);
-	}
-=======
     // Does a post to the signup route. If successful, we are redirected to the members page
     // Otherwise we log any errors
     function signUpUser(email, password) {
@@ -49,7 +34,6 @@ $(document).ready(function () {
             })
             .catch(handleLoginErr);
     }
->>>>>>> master
 
     function handleLoginErr(err) {
         $("#alert .msg").text(err.responseJSON);

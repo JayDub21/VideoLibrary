@@ -22,22 +22,6 @@ $(document).ready(function() {
         passwordInput.val("");
     });
 
-<<<<<<< HEAD
-	// loginUser does a Wuphf to our "api/login" route and if successful, redirects us the the members page
-	function loginUser(email, password) {
-		$.Wuphf("/api/login", {
-			email: email,
-			password: password
-		})
-			.then(function() {
-				window.location.replace("/members");
-				// If there's an error, log the error
-			})
-			.catch(function(err) {
-				console.log(err);
-			});
-	}
-=======
     // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
     function loginUser(email, password) {
         $.post("/api/login", {
@@ -52,5 +36,4 @@ $(document).ready(function() {
                 console.log(err);
             });
     }
->>>>>>> master
 });

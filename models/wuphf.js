@@ -1,51 +1,27 @@
-/*
-  */// Dependencies
-// =============================================================
-
-// This may be confusing but here Sequelize (capital) references the standard library
-var Sequelize = require("sequelize");
-// sequelize (lowercase) references our connection to the DB.
-var sequelize = require("../config/connection.js");
-
-// Creates a "Wuphf" model that matches up with DB
-var Wuphf = sequelize.define("wuphf", {
-  author: Sequelize.STRING,
-  body: Sequelize.STRING,
-  created_at: Sequelize.DATE
-});
-
-// Syncs with DB
-Wuphf.sync();
-
-// Makes the Wuphf Model available for other files (will also create a table)
-module.exports = Wuphf;
-
-
-module.exports = function(sequelize, DataTypes) {
-  var Wuphf = sequelize.define("wuphf", {
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
-    },
-    body: {
-      type: DataTypes.TEXT,
-      allowNull: false,
-      len: [1]
-    }
-  });
-
-  Wuphf.associate = function(models) {
-    // We're saying that a Wuphf should belong to an Author
-    // A Wuphf can't be created without an Author due to the foreign key constraint
-    Wuphf.belongsTo(models.Author, {
-      foreignKey: {
-        allowNull: false
-      }
+// Creating our Wuphf (comments) model
+module.exports = function (sequelize, DataTypes) {
+    var Wuphf = sequelize.define("Wuphf", {
+        user: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        created_at: {
+            type: DataTypes.DATE,
+            allowNull: false
+        },
+        body: {
+            type: DataTypes.STRING,
+            allowNull: false
+        }
     });
-  };
 
-  return Wuphf;
+    return Wuphf;
 };
+
+// comments belong to a user and a user has many comments
+// video has many comments'
+
+// on video
+// api request get all the comments and include all the users
+
+// post author blog example, little different because we have multiple relations on the comment fields,  still only have one asscoaite method but it only 

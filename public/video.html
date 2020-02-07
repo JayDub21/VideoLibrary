@@ -15,14 +15,14 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="/">
                     <img src="../img/logo.png" alt="Bootcamp Video Library" width="248" height="28">
                 </a>
             </div>
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-dark">
+                        <a class="button is-dark" href="/logout">
                             Log Out
                         </a>
                     </div>
@@ -51,7 +51,7 @@
             <div class="tile is-parent is-8">
                 <div class="tile is-child">
                     <h2 class="title is-size-4">Leave comments below...</h2>
-             <div id="chirp-area"></div>            <!-- added to see if chirp works--> 
+             <div id="wuphf-area"></div>            <!-- added to see if wuphf works--> 
                     <div class="wuphf">
                         <p class="wuphf-comment">{WUPHF Placeholder} Lorem ipsum dolor sit amet consectetur
                             adipisicing
@@ -98,44 +98,8 @@
                 <div class="tile is-child">
                     <h2 class="title is-size-4">Related YouTube videos...</h2>
                     <div class="box">
-                        <div class="youtube-links">
-                            <div class="columns">
-                                <div class="column is-4">
-                                    <img class="youtube-thumbnail-placeholder" src="https://via.placeholder.com/125x85">
-                                </div>
-                                <div class="column is-8">
-                                    <p class="youtube-title-placeholder">{YouTube Title Placeholder}</p>
-                                    <p class="youtube-desc-placeholder is-size-7">{YouTube Description Placeholder}
-                                        Lorem
-                                        ipsum dolor sit amet...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="youtube-links">
-                            <div class="columns">
-                                <div class="column is-4">
-                                    <img class="youtube-thumbnail-placeholder" src="https://via.placeholder.com/125x85">
-                                </div>
-                                <div class="column is-8">
-                                    <p class="youtube-title-placeholder">{YouTube Title Placeholder}</p>
-                                    <p class="youtube-desc-placeholder is-size-7">{YouTube Description Placeholder}
-                                        Lorem
-                                        ipsum dolor sit amet...</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="youtube-links">
-                            <div class="columns">
-                                <div class="column is-4">
-                                    <img class="youtube-thumbnail-placeholder" src="https://via.placeholder.com/125x85">
-                                </div>
-                                <div class="column is-8">
-                                    <p class="youtube-title-placeholder">{YouTube Title Placeholder}</p>
-                                    <p class="youtube-desc-placeholder is-size-7">{YouTube Description Placeholder}
-                                        Lorem
-                                        ipsum dolor sit amet...</p>
-                                </div>
-                            </div>
+                        <div id="ytResults">
+
                         </div>
                     </div>
                 </div>
@@ -159,7 +123,11 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/members.js"></script>
+<<<<<<< HEAD
     <script type="text/javascript" src="js/video.js"></script>
+=======
+    <script src="../routes/yt.js"></script>
+>>>>>>> master
 </body>
 
 </html>

@@ -49,14 +49,31 @@
         <div class="big-gap"></div>
         <div class="tile is-ancestor">
 
-            <div class="tile is-parent is-8">
+            <div class="tile is-parent is-8 is-vertical">
                 <div class="tile is-child">
-                    <h2 class="title is-size-4">Leave comments below...</h2>
+                    <h2 class="title is-size-4">Comments...</h2>
                     <div class="wuphf">
+                        <!-- NEED TO RENDER WUPHFS HERE PREPEND-->
                         <p class="wuphf-comment">{wuphf[i].body}</p>
                         </p>
-                        <p class="wuphf-user">{wuphf[i].user}</p>
+                        By: <span class="member-name"></span>
                     </div>
+                </div>
+                <div class="tile is-child is-12">
+                    <h2 class="title is-size-4">Leave Comments...</h2>
+                    <form id="cms">
+                        <div class="form-group">
+                            <textarea placeholder="Post Body" class="form-control wide-input" rows="10"
+                                id="body"></textarea>
+                            <!-- <div class="form-group">
+                                <label for="category">Select Author:</label>
+                                <select class="custom-select" id="author">
+                                </select>
+                            </div> -->
+                            <br />
+                            <button type="submit" class="btn btn-success submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="tile is-parent is-4">
@@ -88,7 +105,8 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/video.js"></script>
-    <!-- <script src="../routes/yt.js"></script> -->
+    <!-- <script type="text/javascript" src="../js/members.js"></script> -->
+
 </body>
 
 </html>

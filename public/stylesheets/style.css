@@ -122,3 +122,24 @@ footer a:hover {
     margin: 30px;
     padding: 10px;
 }
+
+
+
+/* CSS for LEAVE COMMENTS SECTION */
+
+button.submit {
+    float: right;
+}
+
+  
+#cms textarea {
+    resize: none;
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+  
+  /* .wide-input {
+      width: 100%;
+  } */

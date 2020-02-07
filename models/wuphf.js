@@ -5,14 +5,15 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
-        created_at: {
-            type: DataTypes.DATE,
-            allowNull: false
-        },
         body: {
             type: DataTypes.STRING,
             allowNull: false
-        }
+        },
+        // video number will be the link for 'wuphfs' to inner join to 'videos'
+        video_number: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
     });
 
     return Wuphf;

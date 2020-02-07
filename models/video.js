@@ -1,7 +1,14 @@
 // Creating our Video model
+
+var Sequelize = require("sequelize");
+
 module.exports = function (sequelize, DataTypes) {
     var Video = sequelize.define("Video", {
         title: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        video_url: {
             type: DataTypes.STRING,
             allowNull: false
         },

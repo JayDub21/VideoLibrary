@@ -69,4 +69,15 @@ module.exports = function (app) {
             res.end();
         });
     });
+    app.get("/api/video/:id", function (req, res) {
+        db.Video.findOne({
+            where: {
+                id: req.params.id
+            }
+        }).then(function (result) {
+            res.json(result);
+        });
+    });
+
+
 };

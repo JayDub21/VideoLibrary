@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
-    <link href="stylesheets/style.css" rel="stylesheet">
+    <link href="../stylesheets/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,30 +34,28 @@
 
     <div class="container">
         <section class="section welcome">
-            <span class="video-name">{Video Name Placeholder}</span>
+            <span class="video-name"></span>
             <br>
-            <p class="subtitle"><span class="recorded-date">{Recorded Date Placeholder}</span></p>
+            <p class="subtitle"><span class="recorded-date"></span></p>
         </section>
 
-        <div class="box">
-            <iframe class="video-iframe"
-                src="https://zoom.us/rec/play/uJIoIe6r_DI3S9eR4gSDU6B9W9S4KaisgHRM-fVfzUy9ACUGOlagYLtDYues79mZHvKqlb5v83pcSA3W?continueMode=true">
-            </iframe>
+        <div class="box videoframe">
+
+            <iframe class="video-iframe"></iframe>
         </div>
     </div>
+
     <div class="container">
         <div class="big-gap"></div>
         <div class="tile is-ancestor">
+
             <div class="tile is-parent is-8">
                 <div class="tile is-child">
                     <h2 class="title is-size-4">Leave comments below...</h2>
                     <div class="wuphf">
-                        <p class="wuphf-comment">{WUPHF Placeholder} Lorem ipsum dolor sit amet consectetur
-                            adipisicing
-                            elit. Delectus labore, corrupti laborum, eos nam et beatae, repudiandae voluptatum earum
-                            atque placeat ratione sint consequuntur. Neque magnam excepturi quae saepe voluptates!
+                        <p class="wuphf-comment">{wuphf[i].body}</p>
                         </p>
-                        <p class="wuphf-user">{Username Placeholder}</p>
+                        <p class="wuphf-user">{wuphf[i].user}</p>
                     </div>
                 </div>
             </div>
@@ -65,8 +63,8 @@
                 <div class="tile is-child">
                     <h2 class="title is-size-4">Related YouTube videos...</h2>
                     <div class="box">
+                        <!-- make video[i].keyword = input into youtube search  -->
                         <div id="ytResults">
-
                         </div>
                     </div>
                 </div>
@@ -89,8 +87,8 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/members.js"></script>
-    <script src="../routes/yt.js"></script>
+    <script type="text/javascript" src="../js/video.js"></script>
+    <!-- <script src="../routes/yt.js"></script> -->
 </body>
 
 </html>

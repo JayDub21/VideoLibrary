@@ -5,6 +5,10 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
+        video_url: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         rec_date: {
             type: DataTypes.STRING,
             allowNull: false

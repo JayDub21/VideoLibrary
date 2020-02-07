@@ -111,3 +111,17 @@ footer a {
 footer a:hover {
   color: #fff;
 }
+
+/* Rendered rows of videos on members.html page*/
+
+.cardvideo {
+    /* background-color: lightblue; */
+    margin-top: 30px;
+    padding: 10px;
+
+}
+
+.tile {
+    border: 2px solid black;
+    background-color: lightblue;
+}

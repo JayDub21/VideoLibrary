@@ -49,9 +49,15 @@ $(document).ready(function () {
                 `));
             }
         });
+
+
+        // $.get("/api/user_data").then(function (data) {
+        //     let user = data.email;
+        // });
+        // console.log(user);
+        let video_number = id;
+        console.log(video_number);
     })
-    let video_number = id;
-    console.log(video_number);
 
 
 })

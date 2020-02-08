@@ -39,6 +39,11 @@ body {
   border-radius: 5px;
 }
 
+/* Wider sign up page form */
+.wider {
+margin: 0 10%;
+}
+
 .faIcon {
   font-size: 46px;
   text-align: center;
@@ -53,29 +58,12 @@ body {
 .border-radius-10 {
   border-radius: 10px;
   border: 1px solid #ccc;
-
 }
 
 .video-iframe {
   width: 100%;
   height: 640px;
-  /* background-color: blue; */
 }
-
-.wuphf-container {
-  background-color: #fff;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 20px 0px 20px 0px;
-}
-
-/* .wuphf-user {
-  font-size: 14px;
-  font-style: italic;
-  text-align: right;
-  color: dodgerblue;
-} */
 
 .youtube-links {
   background-color: #fafafa;
@@ -115,7 +103,6 @@ footer a:hover {
 
 /* Rendered rows of videos on members.html page*/
 
-
 .tile2 {
     border: 2px solid black;
     background-color: lightblue;
@@ -123,9 +110,28 @@ footer a:hover {
     padding: 10px;
 }
 
+/* ERROR on login and sign-up page  */
+.alert{
+    margin-top: 20px;
+    padding: 15px;
+    border-width: 2px;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
 
+/* CSS for LEAVE WUPHFs SECTION */
 
-/* CSS for LEAVE COMMENTS SECTION */
+.wuphf-container {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+  }
 
 button.submit {
     float: right;
@@ -137,9 +143,8 @@ button.submit {
     font-size: 16px;
     font-weight: bold;
     border-radius: 10px;
-}
+} 
 
-  
 #cms textarea {
     resize: none;
     width: 100%;

@@ -31,12 +31,17 @@ body {
 }
 
 .big-gap {
-  height: 70px;
+  height: 60px;
 }
 
 .home-section {
   text-align: center;
   border-radius: 5px;
+}
+
+/* Wider sign up page form */
+.wider {
+margin: 0 10%;
 }
 
 .faIcon {
@@ -53,28 +58,11 @@ body {
 .border-radius-10 {
   border-radius: 10px;
   border: 1px solid #ccc;
-
 }
 
 .video-iframe {
   width: 100%;
   height: 640px;
-  /* background-color: blue; */
-}
-
-.wuphf {
-  background-color: #fff;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 20px 0px 20px 0px;
-}
-
-.wuphf-user {
-  font-size: 14px;
-  font-style: italic;
-  text-align: right;
-  color: dodgerblue;
 }
 
 .youtube-links {
@@ -114,8 +102,6 @@ footer a:hover {
 }
 
 /* Rendered rows of videos on members.html page*/
-
-
 .tile2 {
     border: 2px solid black;
     background-color: lightblue;
@@ -123,23 +109,51 @@ footer a:hover {
     padding: 10px;
 }
 
+/* ERROR on login and sign-up page  */
+.alert{
+    margin-top: 20px;
+    padding: 15px;
+    border-width: 2px;
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
 
-
-/* CSS for LEAVE COMMENTS SECTION */
+/* CSS for LEAVE WUPHFs SECTION */
+.wuphf-container {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+  }
 
 button.submit {
     float: right;
-}
+    margin-top: 20px;
+    padding: 10px 35px;
+    border-width: 2px;
+    color: #1da1f2;
+    border-color: #1da1f2;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+} 
 
-  
 #cms textarea {
     resize: none;
     width: 100%;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    border-radius: 10px;
 }
   
-  /* .wide-input {
-      width: 100%;
-  } */
+.wuphf-body {
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+  }

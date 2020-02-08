@@ -32,13 +32,10 @@ $(document).ready(function () {
             videosToAdd.push(createNewRow(videos[i]));
         }
         blogContainer.prepend(videosToAdd);
-
-
     }
 
     // This function constructs a post's HTML
     function createNewRow(video) {
-
         var newPostCard = $("<div>");
         newPostCard.addClass("cardvideo tile tile2 is-parent is-6 is-vertical has-text-centered");
         var newPostCardBody = $("<article>");

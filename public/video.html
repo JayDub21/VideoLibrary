@@ -51,27 +51,28 @@
 
             <div class="tile is-parent is-8 is-vertical">
                 <div class="tile is-child">
-                    <h2 class="title is-size-4">Comments...</h2>
-                    <div class="wuphf">
+                    <h2 class="title is-size-4"><i class="fas fa-dog"></i> Wuphfs...</h2>
+                    <div class="wuphf-container">
                         <!-- NEED TO RENDER WUPHFS HERE PREPEND-->
-                        <p class="wuphf-comment">{wuphf[i].body}</p>
-                        </p>
-                        By: <span class="member-name"></span>
+
+
                     </div>
                 </div>
                 <div class="tile is-child is-12">
-                    <h2 class="title is-size-4">Leave Comments...</h2>
+                    <h2 class="title is-size-4">Leave Wuphfs...</h2>
                     <form id="cms">
                         <div class="form-group">
-                            <textarea placeholder="Post Body" class="form-control wide-input" rows="10"
-                                id="body"></textarea>
+                            <textarea placeholder="Post Body" class="form-control wide-input" rows="3"
+                                id="wuphf-box"></textarea>
                             <!-- <div class="form-group">
                                 <label for="category">Select Author:</label>
                                 <select class="custom-select" id="author">
                                 </select>
                             </div> -->
                             <br />
-                            <button type="submit" class="btn btn-success submit">Submit</button>
+                            <button id="wuphf-submit" class="btn btn-success submit">Submit
+                                <i class="fas fa-chevron-circle-right"></i>
+                            </button>
                         </div>
                     </form>
                 </div>

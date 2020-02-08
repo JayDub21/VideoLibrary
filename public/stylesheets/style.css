@@ -31,7 +31,7 @@ body {
 }
 
 .big-gap {
-  height: 70px;
+  height: 60px;
 }
 
 .home-section {
@@ -62,20 +62,20 @@ body {
   /* background-color: blue; */
 }
 
-.wuphf {
+.wuphf-container {
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 10px;
   margin: 20px 0px 20px 0px;
 }
 
-.wuphf-user {
+/* .wuphf-user {
   font-size: 14px;
   font-style: italic;
   text-align: right;
   color: dodgerblue;
-}
+} */
 
 .youtube-links {
   background-color: #fafafa;
@@ -129,6 +129,14 @@ footer a:hover {
 
 button.submit {
     float: right;
+    margin-top: 20px;
+    padding: 10px 35px;
+    border-width: 2px;
+    color: #1da1f2;
+    border-color: #1da1f2;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
   
@@ -138,8 +146,11 @@ button.submit {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    border-radius: 10px;
 }
   
-  /* .wide-input {
-      width: 100%;
-  } */
+.wuphf-body {
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+  }

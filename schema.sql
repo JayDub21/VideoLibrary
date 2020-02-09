@@ -1,6 +1,9 @@
-DROP DATABASE IF EXISTS `videos_db`;
+DROP DATABASE IF EXISTS project2;
 
-CREATE DATABASE `videos_db`;
+CREATE DATABASE project2;
 
-DROP DATABASE IF EXISTS `sequelize_wuphfy`;
-CREATE DATABASE `sequelize_wuphfy`;
+USE project2;
+
+SELECT * FROM project2.Videos;
+
+SELECT * FROM project2.Users;

@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // Slice id number from URL
     console.log(document.location.href.slice(28));
-    id = document.location.href.slice(28);
+    let id = document.location.href.slice(28);
 
     // Grabbing video that match ID number
     $.get("/api/video/" + id).then(function (result) {
@@ -57,10 +57,10 @@ $(document).ready(function () {
         // console.log(user);
         let video_number = id;
         console.log(video_number);
-    })
+    });
 
 
-})
+});
 
 // var wuphfContainer = $(".wuphf-container");
 

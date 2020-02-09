@@ -21,60 +21,51 @@
     </div>
 </nav>
 <div class="hero is-fullheight is-dark is-bold">
-    <div class="container">
-        <!-- <h2>Sign Up Form</h2> -->
-        <!-- <form class="signup">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="email-input" placeholder="Email">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="password-input" placeholder="Password">
-      </div>
-      <div style="display: none" id="alert" class="alert alert-danger" role="alert">
-        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-        <span class="sr-only">Error:</span> <span class="msg"></span>
-      </div>
-      <button type="submit" class="btn btn-default">Sign Up</button>
-    </form>
-    <br />
-    <p>Or log in <a href="/login">here</a></p>
+    <div class="hero-body">
+        <div class="section signUp has-text-centered">
+            <img src="img/big-logo-BCVL.png" alt="Bootcamp Video Library">
+            <div class="big-gap"></div>
+            <h1 class="is-size-1 signUpH1">Create a new user</h2>
+                <div class="small-gap"></div>
 
-    <hr /> -->
-        <div class="big-gap"></div>
-        <h2>Sign Up Form</h2>
-        <div class="field">
-            <form class="signup">
-                <p class="control has-icons-left has-icons-right">
-                    <input class="input" type="email" id="email-input" placeholder="Email">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                        <i class="fas fa-check"></i>
-                    </span>
-                </p>
+                <br>
+                <div class="field">
+                    <form class="signup">
+                        <div class="signUp-label">Email address</div>
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" id="email-input" placeholder="Email">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-check"></i>
+                            </span>
+                        </p>
+                </div>
+                <div class="field">
+                    <div class="signUp-label">Password</div>
+                    <p class="control has-icons-left">
+                        <input class="input" type="password" id="password-input" placeholder="Password">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field">
+                    <p class="control has-text-centered">
+                        <div class="small-gap"></div>
+                        <a href="/signup"><button class="button is-info is-large">Sign Up</button></a>
+                        <div class="small-gap"></div>
+                        <p>Or back to log in <a href="/login">here</a></p>
+                        <div class="small-gap"></div>
+                        <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                            <span aria-hidden="true"></span><i class="fas fa-exclamation-triangle"></i>
+                            User name is taken <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                    </p>
+                </div>
+                </form>
         </div>
-        <div class="field">
-            <p class="control has-icons-left">
-                <input class="input" type="password" id="password-input" placeholder="Password">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                </span>
-            </p>
-        </div>
-        <div class="field">
-            <p class="control">
-                <a href="/" class="button is-warning is-medium" type="submit">
-                    Login
-                </a> &nbsp;
-                <a href="/signup"><button class="button is-success is-medium">
-                        Sign Up
-                    </button></a>
-            </p>
-        </div>
-        </form>
         <div class="big-gap"></div>
     </div>
 </div>

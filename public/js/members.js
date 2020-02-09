@@ -11,6 +11,7 @@ $(document).ready(function () {
 
     // Create rows per video
     getVideos();
+    var videos;
 
     function getVideos() {
         $.get("/api/videos", function (data) {
@@ -61,7 +62,7 @@ $(document).ready(function () {
         const id = $(this).attr("id");
         console.log(id);
         window.location.replace("/video/" + id);
-    })
+    });
 });
 
 

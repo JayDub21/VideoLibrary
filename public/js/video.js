@@ -1,8 +1,10 @@
 $(document).ready(function () {
     // Slice id number from URL
-    let id;
-    console.log(document.location.href.slice(47));
-    id = document.location.href.slice(47);
+    var urlSplit = window.location.pathname.split('/');
+    let id = urlSplit[2];
+    console.log(id);
+    // console.log(document.location.href.slice(47));
+    // id = document.location.href.slice(28);
 
     // Grabbing video that match ID number
     $.get("/api/video/" + id).then(function (result) {

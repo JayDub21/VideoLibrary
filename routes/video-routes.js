@@ -25,4 +25,4 @@ module.exports = function (app) {
             res.json(dbVideo);
         });
     });
-}
+};

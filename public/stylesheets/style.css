@@ -1,124 +1,149 @@
 body {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
-  background-color: #d6dde8;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: #d6dde8;
 }
 
 .navbar {
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px;
 }
 
 .welcome {
-  font-size: 36px;
-  line-height: 52px;
-  color: #4a4a4a;
-  font-weight: bold;
+    font-size: 36px;
+    line-height: 52px;
+    color: #4a4a4a;
+    font-weight: bold;
 }
 
 .hero-h1 {
-  font-size: 42px;
-  margin-top: -50px;
-  padding-bottom: 10px;
+    font-size: 42px;
+    margin-top: -50px;
+    padding-bottom: 10px;
 }
 
 .heroImg {
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .small-gap {
-  height: 25px;
+    height: 25px;
 }
 
 .big-gap {
-  height: 70px;
+    height: 70px;
 }
 
 .home-section {
-  text-align: center;
-  border-radius: 5px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .faIcon {
-  font-size: 46px;
-  text-align: center;
-  color: #cc5000;
-  margin-bottom: 30px;
+    font-size: 46px;
+    text-align: center;
+    color: #cc5000;
+    margin-bottom: 30px;
 }
 
 .video-button {
-  text-align: center;
+    text-align: center;
 }
 
 .border-radius-10 {
-  border-radius: 10px;
-  border: 1px solid #ccc;
+    border-radius: 10px;
+    border: 1px solid #ccc;
 
 }
 
 .video-iframe {
-  width: 100%;
-  height: 640px;
-  /* background-color: blue; */
+    width: 100%;
+    height: 640px;
+    /* background-color: blue; */
 }
 
 .wuphf {
-  background-color: #fff;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  padding: 20px;
-  margin: 20px 0px 20px 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
 }
 
 .wuphf-user {
-  font-size: 14px;
-  font-style: italic;
-  text-align: right;
-  color: dodgerblue;
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+    color: dodgerblue;
 }
 
 .youtube-links {
-  background-color: #fafafa;
-  border-radius: 15x;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px 0px 20px 0px;
+    background-color: #fafafa;
+    border-radius: 15x;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
 }
 
 .youtube-links:hover {
-  border: 1px solid dodgerblue;
-  background-color: #efefef;
+    border: 1px solid dodgerblue;
+    background-color: #efefef;
 }
 
 /* STYLING FOOTER */
 footer {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  padding: 15px;
-  text-align: center;
-  background-color: #ccc;
-  font-size: 14px;
-  color: #333;
-  border-top: 1px solid #999;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #999;
 }
 
 footer a {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  font-style: italic;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-style: italic;
 }
 
 footer a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 /* Rendered rows of videos on members.html page*/
 
+.video-container {
+    margin: 100px;
+}
 
-.tile2 {
-    border: 2px solid black;
+.cardvideo {
+    border: 1px solid #999;
+    box-shadow: #999 4px 4px 8px;
     background-color: lightblue;
-    margin: 30px;
-    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    /* margin-bottom: 20px; */
+    /* padding: 10px; */
+    /* width: 80%; */
+}
+
+.cardvideo:hover {
+    cursor: pointer;
+    background-color: turquoise;
+}
+
+.playButton {
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+    margin-top: 25px;
+}
+
+
+.comments-iframe {
+    width: 100%;
+    height: 350px;
 }

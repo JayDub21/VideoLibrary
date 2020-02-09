@@ -58,7 +58,7 @@ $(document).ready(function () {
         videoCard.attr("id", video.id);
         return videoCard;
     }
-    $(document).on("click", ".cardvideo", function (e) {
+    $(document).on("click", ".cardvideo", function () {
         const id = $(this).attr("id");
         console.log(id);
         window.location.replace("/video/" + id);

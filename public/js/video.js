@@ -1,7 +1,10 @@
 $(document).ready(function () {
     // Slice id number from URL
+
     console.log(document.location.href.slice(28));
     let id = document.location.href.slice(28);
+
+
 
     // Grabbing video that match ID number
     $.get("/api/video/" + id).then(function (result) {
@@ -11,7 +14,7 @@ $(document).ready(function () {
         console.log(result.keyword);
         $(".video-name").text(result.title);
         $(".recorded-date").text(result.rec_date);
-        $(".video-iframe").attr("src", result.video_url)
+        $(".video-iframe").attr("src", result.video_url);
 
         // Video.keywords used for YouTube keyword search
         let search = result.keyword;
@@ -55,6 +58,7 @@ $(document).ready(function () {
         //     let user = data.email;
         // });
         // console.log(user);
+        let id;
         let video_number = id;
         console.log(video_number);
     });
@@ -172,4 +176,3 @@ $(document).ready(function () {
 //     }
 
 // });
-

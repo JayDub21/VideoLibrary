@@ -17,9 +17,9 @@ module.exports = function (app) {
     // otherwise send back an error
     app.post("/api/signup", function (req, res) {
         db.User.create({
-            email: req.body.email,
-            password: req.body.password
-        })
+                email: req.body.email,
+                password: req.body.password
+            })
             .then(function () {
                 res.redirect(307, "/api/login");
             })
@@ -77,6 +77,23 @@ module.exports = function (app) {
         }).then(function (result) {
             res.json(result);
         });
+    });
+
+    app.post("/api/addVid", function (req, res) {
+        db.Video.create({
+                title: req.body.title,
+                video_url: req.body.video_url,
+                rec_date: req.body.rec_date,
+                keyword: req.body.keyword
+            })
+            .then(function () {
+                // want to clear the form and show a notification
+                alert("New Video Added!");
+
+            })
+            .catch(function (err) {
+                res.status(401).json(err);
+            });
     });
 
 

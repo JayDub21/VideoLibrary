@@ -21,8 +21,8 @@ $(document).ready(function () {
         console.log(search);
         var redirectHelp = "https://cors-ut-bootcamp.herokuapp.com/";
 
-        // I TURNED OFF APIKEY BY ADD '!!!' AT END FOR NOW.
-        const queryURL = redirectHelp + "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=" + search + "&type=video&key=AIzaSyDVRVA52TlJZwDME-vLn3aOwARe7-H_3OM!!!";
+        // I TURNED OFF APIKEY TILL WE GET .ENV WORKING.
+        const queryURL = redirectHelp + "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=" + search + "&type=video&key=APIKEYGOESHERE";
 
         $.ajax({
             url: queryURL,

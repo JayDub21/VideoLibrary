@@ -52,6 +52,12 @@ body {
     border-radius: 5px;
 }
 
+
+.add-video-form {
+    margin: 0 auto;
+    width: 740px;
+}
+
 /* Wider sign up page form */
 .wider {
     margin: 0 10%;

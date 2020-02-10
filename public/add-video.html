@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Members Only - Video Library</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link href="../stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="../img/logo.png" alt="Bootcamp Video Library" width="248" height="28">
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-success" href="/addvideo">
+                            Add a Video
+                        </a>
+                        <a class="button is-info" href="/members">
+                            Back to Library
+                        </a>
+                        <a class="button is-dark" href="/logout">
+                            Log Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <section class="section add-video-form">
+            <div class="big-gap"></div>
+            <h1 class="is-size-1 signUpH1">Add a new video to the library</h2>
+                <div class="small-gap"></div>
+
+                <br>
+                <div class="field">
+                    <form class="add-video">
+                        <div class="signUp-label">Video Title</div>
+                        <p class="control has-icons-left">
+                            <input class="input" type="title" id="title-input" placeholder="Video Title">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-heading"></i>
+                            </span>
+                        </p>
+                </div>
+                <div class="small-gap"></div>
+                <div class="field">
+                    <div class="signUp-label">Recording Date</div>
+                    <p class="control has-icons-left">
+                        <input class="input" type="rec_date" id="rec_date-input" placeholder="MM-DD-YYYY">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-calendar-alt"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="small-gap"></div>
+                <div class="field">
+                    <div class="signUp-label">Zoom Link</div>
+                    <p class="control has-icons-left">
+                        <input class="input" type="video_url" id="video_url-input"
+                            placeholder="https://zoom.us/rec/share/xO5OEZuq1TtORYXN2UqDBb8HPJrZaaa8gChMr_Vfyh3xmC7ko-2zapL66yVp9NkB">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-link"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="small-gap"></div>
+                <div class="field">
+                    <div class="signUp-label">Keywords</div>
+                    <p class="control has-icons-left">
+                        <input class="input" type="keyword" id="keyword-input" placeholder="Keyword Phrase">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-tag"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="small-gap"></div>
+                <div class="field">
+                    <p class="control has-text-centered">
+                        <div class="small-gap"></div>
+                        <a href="/addVid"><button class="button is-success is-large">Submit</button></a>
+                        <!-- <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                            <span aria-hidden="true"></span><i class="fas fa-exclamation-triangle"></i>
+                            User name is taken <i class="fas fa-exclamation-triangle"></i>
+                        </div> -->
+                    </p>
+                </div>
+                </form>
+    </div>
+    </section>
+
+    <div class="big-gap"></div>
+    </div>
+
+    <footer>
+        <div>
+            <p>
+                Bootcamp Video Library site created by Team WUPHF:<br>
+                <a href="https://github.com/Luke2theDuke">Luke Duquette</a>,
+                <a href="https://github.com">Christopher Garcia</a>,
+                <a href="https://github.com">Henry Hawm</a>, and
+                <a href="https://github.com/JayDub21">Justin Wofford</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/addVideo.js"></script>
+</body>
+
+</html>

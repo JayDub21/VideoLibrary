@@ -35,15 +35,16 @@ $(document).ready(function () {
                 keyword: keyword
             })
             .then(function () {
-                window.location.replace("/members");
-                // If there's an error, handle it by throwing up a bootstrap alert
+                $("#alert .msg").text(err.responseJSON);
+                $("#alert").fadeIn(2000);
+                console.log(err); // If there's an error, handle it by throwing up a bootstrap alert
             })
             .catch(handleLoginErr);
     }
 
     function handleLoginErr(err) {
         // $("#alert .msg").text(err.responseJSON);
-        $("#alert").fadeIn(500);
+        $("#alert").fadeIn(3000);
         console.log(err);
     }
 });

@@ -87,9 +87,7 @@ module.exports = function (app) {
                 keyword: req.body.keyword
             })
             .then(function () {
-                // want to clear the form and show a notification
-                alert("New Video Added!");
-
+                res.redirect(307, "/api/login");
             })
             .catch(function (err) {
                 res.status(401).json(err);

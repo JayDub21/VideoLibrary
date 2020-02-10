@@ -58,6 +58,18 @@ body {
     width: 740px;
 }
 
+.success-alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-width: 2px;
+    color: white;
+    background-color: #48c774;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+}
+
 /* Wider sign up page form */
 .wider {
     margin: 0 10%;

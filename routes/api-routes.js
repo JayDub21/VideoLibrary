@@ -72,4 +72,18 @@ module.exports = function (app) {
             res.json(response.data);
         }).catch(response => res.json(response));
     });
+    app.post("/api/addVid", function (req, res) {
+        db.Video.create({
+                title: req.body.title,
+                video_url: req.body.video_url,
+                rec_date: req.body.rec_date,
+                keyword: req.body.keyword
+            })
+            .then(function () {
+                res.redirect(307, "/api/login");
+            })
+            .catch(function (err) {
+                res.status(401).json(err);
+            });
+    });
 };

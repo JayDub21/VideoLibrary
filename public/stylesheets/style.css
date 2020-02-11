@@ -52,6 +52,13 @@ body {
     border-radius: 5px;
 }
 
+.notify {
+    border-radius: 15px;
+    box-shadow: #999 4px 4px 8px;
+    margin: 0 auto;
+    margin: 20px;
+}
+
 
 .add-video-form {
     margin: 0 auto;

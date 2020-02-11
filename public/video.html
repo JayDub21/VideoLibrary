@@ -44,10 +44,22 @@
             <br>
             <p class="subtitle"><span class="recorded-date"></span></p>
         </section>
-
+        <div class="notification is-danger notify">
+            <button class="delete"></button>
+            <p>PLEASE NOTE:</p><br>
+            <p>The Bootcamp course recordings used in this project are property of Trilogy Education Services. As such,
+                the
+                video
+                sections have been replaced by a placeholder image of what the project looked like when they were
+                working.
+                In other
+                words, the videos will not actually play. But, you can still see and understand the concept...</p>
+            <p style="text-align:right;">Thank you!<br><span style=" font-style: italic;">-TEAM WUPHF</span></p>
+        </div>
         <div class="box videoframe">
-
-            <iframe class="video-iframe"></iframe>
+            <img src="../img/zoom-recording-placeholder.png" alt="">
+            <!-- Commented out the iframe that was being used to display the videos for the live project -->
+            <!-- <iframe class="video-iframe"></iframe> -->
         </div>
     </div>
 
@@ -94,6 +106,7 @@
                     <h2 class="title is-size-4">Related YouTube videos...</h2>
                     <div class="box">
                         <!-- make video[i].keyword = input into youtube search  -->
+
                         <div id="ytResults">
                         </div>
                     </div>

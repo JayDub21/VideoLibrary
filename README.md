@@ -2,6 +2,8 @@
 ### Project 2 - Group 6 (TEAM WUPHF)
 ___Justin Wofford, Luke Duquette, Christopher Garcia, Henry Hawm___
 
+-[View Site Here](https://thawing-cove-88374.herokuapp.com/login)
+
 ## Screenshot
 
 ![Getting Started](public/img/bcvl-screenshot.png)

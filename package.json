@@ -26,6 +26,7 @@
     },
     "devDependencies": {
         "eslint": "^6.8.0",
-        "git-open": "^2.1.0"
+        "git-open": "^2.1.0",
+        "minimist": ">=0.2.1"
     }
 }
